@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar">
+            <h2>ExpenseTrack</h2>
+
+            <nav>
+                <a href="index.html">Dashboard</a>
+                <a href="expenses.html" class="active">Expenses</a>
+                <a href="expense-form.html">Add Expense</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+
+            <div class="page-header row-header">
+
+                <div>
+                    <h1>Expenses</h1>
+                </div>
+
+                <a href="expense-form.html" class="button">
+                    + Add Expense
+                </a>
+
+            </div>
+
+            <div class="section">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Expense Name</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="expense-list">
+                    </tbody>
+
+                </table>
+
+                <div class="total">
+                    <span>Total Expenses</span>
+                    <strong id="total-amount">₱0.00</strong>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
